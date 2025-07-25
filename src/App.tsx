@@ -108,7 +108,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-serif font-bold text-glow">
+              <h1 className="text-2xl font-serif font-bold text-foreground">
                 Ethereal Essence
               </h1>
             </div>
@@ -207,7 +207,7 @@ function App() {
           <div className="organic-shape absolute top-10 left-10 w-32 h-32 bg-accent/10 -z-10"></div>
           <div className="organic-shape absolute bottom-10 right-10 w-24 h-24 bg-primary/10 -z-10"></div>
           
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-glow float">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-foreground float">
             Ethereal Essence
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl mx-auto">
@@ -216,7 +216,7 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-accent hover:bg-accent/90 text-black font-medium glow-green-hover"
+              className="bg-accent hover:bg-accent/90 text-black font-medium text-foreground glow-green-hover"
               onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Collection
@@ -235,7 +235,7 @@ function App() {
       {/* Products Section */}
       <section id="products" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-serif font-bold text-center mb-12 text-glow">
+          <h2 className="text-4xl font-serif font-bold text-center mb-12 text-foreground">
             Mystical Collection
           </h2>
           
@@ -353,7 +353,7 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-4 bg-black/20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-serif font-bold mb-8 text-glow">
+          <h2 className="text-4xl font-serif font-bold mb-8 text-foreground">
             Our Ethereal Story
           </h2>
           <p className="text-lg text-white/80 mb-8 leading-relaxed">
@@ -366,21 +366,21 @@ function App() {
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 glow-green">
                 <span className="text-2xl">🍄</span>
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-2 text-accent">Handcrafted</h3>
+              <h3 className="text-xl font-serif font-semibold mb-2 text-foreground">Handcrafted</h3>
               <p className="text-white/70">Every piece is uniquely made by skilled artisans</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 glow-green">
                 <span className="text-2xl">🦋</span>
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-2 text-accent">Mystical</h3>
+              <h3 className="text-xl font-serif font-semibold mb-2 text-foreground">Mystical</h3>
               <p className="text-white/70">Inspired by nature's ethereal beauty</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 glow-green">
                 <span className="text-2xl">🕯️</span>
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-2 text-accent">Sustainable</h3>
+              <h3 className="text-xl font-serif font-semibold mb-2 text-foreground">Sustainable</h3>
               <p className="text-white/70">Eco-friendly materials and practices</p>
             </div>
           </div>
@@ -392,13 +392,13 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-serif font-bold mb-4 text-glow">Ethereal Essence</h3>
+              <h3 className="text-xl font-serif font-bold mb-4 text-foreground">Ethereal Essence</h3>
               <p className="text-white/70 text-sm">
                 Bringing mystical beauty to your sacred spaces through handcrafted artisanal decor.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-accent">Shop</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Shop</h4>
               <ul className="space-y-2 text-sm text-white/70">
                 <li><a href="#" className="hover:text-accent transition-colors">Mushroom Lights</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Hand-Painted Moths</a></li>
@@ -407,7 +407,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-accent">Support</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Support</h4>
               <ul className="space-y-2 text-sm text-white/70">
                 <li><a href="#" className="hover:text-accent transition-colors">Contact Us</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Shipping Info</a></li>
@@ -416,7 +416,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-accent">Connect</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Connect</h4>
               <ul className="space-y-2 text-sm text-white/70">
                 <li><a href="#" className="hover:text-accent transition-colors">Instagram</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Pinterest</a></li>

@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --primary: 88 52% 18%;
-  --accent: 88 46% 48%;
-  --background: 80 20% 4%;
-  --dark-mode: 88 28% 14%;
-  --foreground: 0 0% 100%;
-  --muted: 88 52% 18%;
-  --muted-foreground: 80 20% 75%;
-  --card: 80 43% 6%;
-  --card-foreground: 0 0% 100%;
-  --border: 88 52% 18%;
-  --input: 88 52% 18%;
-  --ring: 88 46% 48%;
+  --primary: 120 50% 35%;
+  --accent: 120 60% 50%;
+  --background: 120 40% 92%;
+  --dark-mode: 120 30% 85%;
+  --foreground: 120 30% 15%;
+  --muted: 120 20% 80%;
+  --muted-foreground: 120 15% 45%;
+  --card: 120 30% 95%;
+  --card-foreground: 120 30% 15%;
+  --border: 120 25% 75%;
+  --input: 120 30% 95%;
+  --ring: 120 60% 50%;
 }
 
 * {
@@ -44,45 +44,53 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: radial-gradient(circle at 20% 30%, hsl(var(--accent) / 15%) 0%, transparent 50%),
-              radial-gradient(circle at 80% 70%, hsl(var(--primary) / 20%) 0%, transparent 50%),
-              radial-gradient(circle at 40% 80%, hsl(var(--accent) / 10%) 0%, transparent 50%),
-              radial-gradient(circle at 90% 20%, hsl(var(--primary) / 15%) 0%, transparent 50%),
-              hsl(var(--background));
-  animation: ethereal-move 20s ease-in-out infinite;
+  background: radial-gradient(circle at 30% 40%, hsl(var(--accent) / 25%) 0%, transparent 60%),
+              radial-gradient(circle at 70% 60%, hsl(var(--primary) / 30%) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, hsl(var(--accent) / 20%) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, hsl(var(--primary) / 25%) 0%, transparent 50%),
+              linear-gradient(135deg, hsl(var(--background)), hsl(120deg 50% 88%));
+  animation: ethereal-move 15s ease-in-out infinite;
 }
 
 @keyframes ethereal-move {
-  0%, 100% {
-    background: radial-gradient(circle at 20% 30%, hsl(var(--accent) / 15%) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, hsl(var(--primary) / 20%) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, hsl(var(--accent) / 10%) 0%, transparent 50%),
-                radial-gradient(circle at 90% 20%, hsl(var(--primary) / 15%) 0%, transparent 50%),
-                hsl(var(--background));
+  0% {
+    background: radial-gradient(circle at 30% 40%, hsl(var(--accent) / 25%) 0%, transparent 60%),
+                radial-gradient(circle at 70% 60%, hsl(var(--primary) / 30%) 0%, transparent 60%),
+                radial-gradient(circle at 20% 80%, hsl(var(--accent) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, hsl(var(--primary) / 25%) 0%, transparent 50%),
+                linear-gradient(135deg, hsl(var(--background)), hsl(120deg 50% 88%));
   }
 
   25% {
-    background: radial-gradient(circle at 60% 20%, hsl(var(--accent) / 15%) 0%, transparent 50%),
-                radial-gradient(circle at 30% 80%, hsl(var(--primary) / 20%) 0%, transparent 50%),
-                radial-gradient(circle at 80% 40%, hsl(var(--accent) / 10%) 0%, transparent 50%),
-                radial-gradient(circle at 10% 60%, hsl(var(--primary) / 15%) 0%, transparent 50%),
-                hsl(var(--background));
+    background: radial-gradient(circle at 60% 30%, hsl(var(--accent) / 25%) 0%, transparent 60%),
+                radial-gradient(circle at 40% 70%, hsl(var(--primary) / 30%) 0%, transparent 60%),
+                radial-gradient(circle at 80% 50%, hsl(var(--accent) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 20% 50%, hsl(var(--primary) / 25%) 0%, transparent 50%),
+                linear-gradient(225deg, hsl(var(--background)), hsl(120deg 50% 88%));
   }
 
   50% {
-    background: radial-gradient(circle at 80% 60%, hsl(var(--accent) / 15%) 0%, transparent 50%),
-                radial-gradient(circle at 20% 40%, hsl(var(--primary) / 20%) 0%, transparent 50%),
-                radial-gradient(circle at 70% 20%, hsl(var(--accent) / 10%) 0%, transparent 50%),
-                radial-gradient(circle at 40% 90%, hsl(var(--primary) / 15%) 0%, transparent 50%),
-                hsl(var(--background));
+    background: radial-gradient(circle at 70% 40%, hsl(var(--accent) / 25%) 0%, transparent 60%),
+                radial-gradient(circle at 30% 60%, hsl(var(--primary) / 30%) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, hsl(var(--accent) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, hsl(var(--primary) / 25%) 0%, transparent 50%),
+                linear-gradient(315deg, hsl(var(--background)), hsl(120deg 50% 88%));
   }
 
   75% {
-    background: radial-gradient(circle at 30% 70%, hsl(var(--accent) / 15%) 0%, transparent 50%),
-                radial-gradient(circle at 70% 30%, hsl(var(--primary) / 20%) 0%, transparent 50%),
-                radial-gradient(circle at 20% 60%, hsl(var(--accent) / 10%) 0%, transparent 50%),
-                radial-gradient(circle at 85% 80%, hsl(var(--primary) / 15%) 0%, transparent 50%),
-                hsl(var(--background));
+    background: radial-gradient(circle at 40% 60%, hsl(var(--accent) / 25%) 0%, transparent 60%),
+                radial-gradient(circle at 60% 40%, hsl(var(--primary) / 30%) 0%, transparent 60%),
+                radial-gradient(circle at 20% 50%, hsl(var(--accent) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, hsl(var(--primary) / 25%) 0%, transparent 50%),
+                linear-gradient(45deg, hsl(var(--background)), hsl(120deg 50% 88%));
+  }
+
+  100% {
+    background: radial-gradient(circle at 30% 40%, hsl(var(--accent) / 25%) 0%, transparent 60%),
+                radial-gradient(circle at 70% 60%, hsl(var(--primary) / 30%) 0%, transparent 60%),
+                radial-gradient(circle at 20% 80%, hsl(var(--accent) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, hsl(var(--primary) / 25%) 0%, transparent 50%),
+                linear-gradient(135deg, hsl(var(--background)), hsl(120deg 50% 88%));
   }
 }
 
@@ -127,10 +135,7 @@ body {
   }
 }
 
-/* Ethereal text glow */
-.text-glow {
-  text-shadow: 0 0 10px hsl(var(--accent) / 50%), 0 0 20px hsl(var(--accent) / 30%);
-}
+
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
