@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 88 52% 18%;
+  --accent: 88 46% 48%;
+  --background: 80 20% 4%;
+  --dark-mode: 88 28% 14%;
+  --foreground: 0 0% 100%;
+  --muted: 88 52% 18%;
+  --muted-foreground: 80 20% 75%;
+  --card: 80 43% 6%;
+  --card-foreground: 0 0% 100%;
+  --border: 88 52% 18%;
+  --input: 88 52% 18%;
+  --ring: 88 46% 48%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: Inter, sans-serif;
+}
+
+/* Animated Circular Gradient Background */
+.ethereal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 30%, hsl(var(--accent) / 15%) 0%, transparent 50%),
+              radial-gradient(circle at 80% 70%, hsl(var(--primary) / 20%) 0%, transparent 50%),
+              radial-gradient(circle at 40% 80%, hsl(var(--accent) / 10%) 0%, transparent 50%),
+              radial-gradient(circle at 90% 20%, hsl(var(--primary) / 15%) 0%, transparent 50%),
+              hsl(var(--background));
+  animation: ethereal-move 20s ease-in-out infinite;
+}
+
+@keyframes ethereal-move {
+  0%, 100% {
+    background: radial-gradient(circle at 20% 30%, hsl(var(--accent) / 15%) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, hsl(var(--primary) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, hsl(var(--accent) / 10%) 0%, transparent 50%),
+                radial-gradient(circle at 90% 20%, hsl(var(--primary) / 15%) 0%, transparent 50%),
+                hsl(var(--background));
+  }
+
+  25% {
+    background: radial-gradient(circle at 60% 20%, hsl(var(--accent) / 15%) 0%, transparent 50%),
+                radial-gradient(circle at 30% 80%, hsl(var(--primary) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 80% 40%, hsl(var(--accent) / 10%) 0%, transparent 50%),
+                radial-gradient(circle at 10% 60%, hsl(var(--primary) / 15%) 0%, transparent 50%),
+                hsl(var(--background));
+  }
+
+  50% {
+    background: radial-gradient(circle at 80% 60%, hsl(var(--accent) / 15%) 0%, transparent 50%),
+                radial-gradient(circle at 20% 40%, hsl(var(--primary) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 70% 20%, hsl(var(--accent) / 10%) 0%, transparent 50%),
+                radial-gradient(circle at 40% 90%, hsl(var(--primary) / 15%) 0%, transparent 50%),
+                hsl(var(--background));
+  }
+
+  75% {
+    background: radial-gradient(circle at 30% 70%, hsl(var(--accent) / 15%) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, hsl(var(--primary) / 20%) 0%, transparent 50%),
+                radial-gradient(circle at 20% 60%, hsl(var(--accent) / 10%) 0%, transparent 50%),
+                radial-gradient(circle at 85% 80%, hsl(var(--primary) / 15%) 0%, transparent 50%),
+                hsl(var(--background));
+  }
+}
+
+/* Glowing effects */
+.glow-green {
+  box-shadow: 0 0 20px hsl(var(--accent) / 30%), 0 0 40px hsl(var(--accent) / 10%);
+}
+
+.glow-green-hover:hover {
+  box-shadow: 0 0 30px hsl(var(--accent) / 40%), 0 0 60px hsl(var(--accent) / 20%);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Organic shapes */
+.organic-shape {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph-shape 8s ease-in-out infinite;
+}
+
+@keyframes morph-shape {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30%;
+  }
+}
+
+/* Floating animation */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Ethereal text glow */
+.text-glow {
+  text-shadow: 0 0 10px hsl(var(--accent) / 50%), 0 0 20px hsl(var(--accent) / 30%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--accent) / 50%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent) / 70%);
+}
